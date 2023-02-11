@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_search"
+        android:title="Search" />
+    <item
+        android:id="@+id/scriptsFragment"
+        android:icon="@drawable/ic_mail"
+        android:title="Scripts"
+        />
+    <item
+        android:id="@+id/infoFragment"
+        android:icon="@drawable/ic_description"
+        android:title="Info" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+</menu>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Register of Experts"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ET_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="ID : "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Title"
+        app:layout_constraintStart_toStartOf="@+id/tv_Title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Title" />
+
+    <EditText
+        android:id="@+id/ET_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Name : "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ET_id"
+        app:layout_constraintStart_toStartOf="@+id/ET_id"
+        app:layout_constraintTop_toBottomOf="@+id/ET_id" />
+
+    <EditText
+        android:id="@+id/ET_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Address : "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ET_name"
+        app:layout_constraintStart_toStartOf="@+id/ET_name"
+        app:layout_constraintTop_toBottomOf="@+id/ET_name" />
+
+    <EditText
+        android:id="@+id/ET_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Title : "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ET_address"
+        app:layout_constraintStart_toStartOf="@+id/ET_address"
+        app:layout_constraintTop_toBottomOf="@+id/ET_address" />
+
+    <EditText
+        android:id="@+id/ET_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Phone : "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ET_title"
+        app:layout_constraintStart_toStartOf="@+id/ET_title"
+        app:layout_constraintTop_toBottomOf="@+id/ET_title" />
+
+    <EditText
+        android:id="@+id/ET_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Email : "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ET_phone"
+        app:layout_constraintStart_toStartOf="@+id/ET_phone"
+        app:layout_constraintTop_toBottomOf="@+id/ET_phone" />
+
+    <EditText
+        android:id="@+id/ET_nationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Nationality : "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ET_email"
+        app:layout_constraintStart_toStartOf="@+id/ET_email"
+        app:layout_constraintTop_toBottomOf="@+id/ET_email" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Records"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add" />
+</androidx.constraintlayout.widget.ConstraintLayout>

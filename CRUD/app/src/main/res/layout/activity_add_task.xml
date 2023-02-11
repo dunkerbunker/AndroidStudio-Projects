@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".AddTask">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Details"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the title"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="#BFBBBB"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/et_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter the task"
+        android:padding="15dp"
+        android:background="@drawable/custom_edittext"
+        android:textColorHint="#BFBBBB"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btn_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Delete" />
+
+</LinearLayout>

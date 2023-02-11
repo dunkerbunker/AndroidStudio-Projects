@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Student result"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_et"
+        android:ems="10"
+        android:hint="Enter ID"
+        android:minHeight="48dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777777"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:minHeight="48dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777777"
+        android:background="@drawable/custom_et"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_id"
+        app:layout_constraintVertical_bias="0.051" />
+
+
+    <EditText
+        android:id="@+id/et_grade1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_et"
+        android:ems="10"
+        android:hint="Enter Grade 1"
+        android:minHeight="48dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777777"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.053" />
+
+
+    <EditText
+        android:id="@+id/et_grade2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_et"
+        android:ems="10"
+        android:hint="Enter Grade 2"
+        android:minHeight="48dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777777"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_grade1"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <EditText
+        android:id="@+id/et_grade3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_et"
+        android:ems="10"
+        android:hint="Enter Grade 3"
+        android:minHeight="48dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777777"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_grade2"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/tv_creditpoint1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_et"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Grade"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777777"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/tv_creditpoint2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_et"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Grade"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777777"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <TextView
+        android:id="@+id/tv_creditpoint3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_et"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Grade"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777777"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <TextView
+        android:id="@+id/tv_value1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_et"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Value"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777777"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/tv_value3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_et"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Value"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777777"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <TextView
+        android:id="@+id/tv_value2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_et"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Value"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777777"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Add record"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_grade3"
+        app:layout_constraintVertical_bias="0.108"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="View records"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add"
+        app:layout_constraintVertical_bias="0.109"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Find grade and grade value"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add"
+        app:layout_constraintVertical_bias="0.518"
+        tools:layout_editor_absoluteX="44dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

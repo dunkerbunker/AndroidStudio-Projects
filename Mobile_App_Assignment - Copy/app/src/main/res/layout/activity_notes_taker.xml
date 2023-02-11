@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:padding="20dp"
+    tools:context=".NotesTakerActivity">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_notes"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView_back"
+                android:src="@drawable/ic_back"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"/>
+
+            <ImageView
+                android:id="@+id/imageView_save"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_save"
+                android:padding="8dp"
+                android:background="@android:color/transparent"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note Details"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif"/>
+
+        <EditText
+            android:id="@+id/editText_title"
+            android:hint="Enter title"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:background="@drawable/custom_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editText_notes"
+            android:layout_width="match_parent"
+            android:layout_height="378dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="top"
+            android:hint="Enter notes"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_edittext"
+            app:backgroundTint="@color/blue"
+            android:textColor="@color/black"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

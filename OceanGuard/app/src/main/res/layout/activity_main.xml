@@ -1,47 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42000002"
-        app:srcCompat="@drawable/instagram" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:drawablePadding="5dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        tools:targetApi="lollipop">
 
-        android:text="Neat Roots"
-        android:textSize="24sp"
-        android:textColor="@color/pink"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:drawableLeft="@drawable/logo"
-        tools:ignore="UseCompatTextViewDrawableXml" />
+        <LinearLayout
+            android:id="@+id/navHomeLayout"
+            android:background="@drawable/round_back_home_100"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="From"
-        android:textColor="#878585"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/navHomeImage"
+                android:contentDescription="@string/navImageContentDescription"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_selected_icon"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/navHomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/home"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navMapLayout"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/navMapImage"
+                android:contentDescription="@string/navImageContentDescription"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/navMapText"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/map"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/map"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navProfileLayout"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/navProfileImage"
+                android:contentDescription="@string/navImageContentDescription"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_icon"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/navProfileText"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/profile"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navMoreLayout"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/navMoreImage"
+                android:contentDescription="@string/navImageContentDescription"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more_icon"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/navMoreText"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/more"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

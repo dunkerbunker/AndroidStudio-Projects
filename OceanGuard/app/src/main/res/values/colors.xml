@@ -2,7 +2,19 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="pink">#C13584</color>
-    <color name="blue">#1E88E5</color>
+    <color name="yellow">#FFEB3B</color>
+
+
+    <color name="home">#1194AA</color>
+    <color name="map">#4CAF50</color>
+    <color name="more">#AE7E0F</color>
+    <color name="profile">#5B37b7</color>
+
+    <color name="home_20">#331194AA</color>
+    <color name="map_20">#334CAF50</color>
+    <color name="more_20">#33AE7E0F</color>
+    <color name="profile_20">#335B37b7</color>
+
+    <color name="ocean_blue">#6074f4</color>
 
 </resources>

@@ -23,7 +23,7 @@
         android:paddingBottom="15dp"
         android:elevation="10dp"
         android:gravity="center"
-        android:background="#ffffff"
+        android:background="@drawable/nav_bar_shape"
         android:layout_alignParentBottom="true"
         tools:targetApi="lollipop">
 

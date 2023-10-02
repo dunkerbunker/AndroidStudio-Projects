@@ -1,10 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/home"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/creme_gray"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OceanGuard"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/circleImageViewSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/avatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.965"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/create_post"
+        android:background="@drawable/card_shape_bottom_rounded"
+        android:backgroundTint="@color/creme_gray"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:trackColor="#FF7CB6FF"
+            app:indicatorColor="#1877F2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:trackThickness="2dp"
+            app:trackCornerRadius="2dp"
+            android:indeterminate="true" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/avatar"
+                app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Share with the community!"
+                app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+                app:layout_constraintStart_toEndOf="@+id/circleImageView"
+                app:layout_constraintTop_toTopOf="@+id/circleImageView"
+                tools:ignore="ContentDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:id="@+id/image_post_start"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:backgroundTint="#EBF8E8"
+                android:background="@drawable/btn_round"
+                android:layout_width="100dp"
+                android:layout_height="35dp">
+                <ImageView
+                    android:padding="8dp"
+                    android:src="@drawable/ic_aperture"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#A9E19D"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="#A9E19D"
+                    android:text="Image"
+                    android:layout_marginEnd="5dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:ignore="InefficientWeight,NestedWeights,RtlCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/video_post_start"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:backgroundTint="#E6F0FF"
+                android:background="@drawable/btn_round"
+                android:layout_width="100dp"
+                android:layout_height="35dp">
+                <ImageView
+                    android:padding="9dp"
+                    android:src="@drawable/ic_video"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#85B6FD"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:tint="#fff"
+
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="#85B6FD"
+                    android:text="video"
+                    android:layout_marginEnd="4dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:ignore="InefficientWeight,NestedWeights,RtlCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/event_post_start"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:backgroundTint="#FCEAE6"
+                android:background="@drawable/btn_round"
+                android:layout_width="100dp"
+                android:layout_height="35dp">
+                <ImageView
+                    android:padding="8dp"
+                    android:src="@drawable/ic_live"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#F4A792"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="#F4A792"
+                    android:text="Event"
+                    android:layout_marginEnd="4dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:ignore="InefficientWeight,NestedWeights,RtlCompat" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"/>
+
 
     <TextView
         android:layout_width="match_parent"
@@ -15,4 +215,4 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-</FrameLayout>
+</LinearLayout>
